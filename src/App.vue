@@ -7,10 +7,11 @@
 
 <script>
 // ローカル登録
-import LikeHeader from "./LikeHeader.vue"
+import LikeHeader from "./components/LikeHeader.vue"
 
 export default {
   components: {
+    // LikeHeader: LikeHeader
     LikeHeader
   }
 }
