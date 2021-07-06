@@ -24,7 +24,11 @@
     },
     methods: {
       increment() {
-        this.number += 1;
+        // コンポーネントの中なので、this
+        // コンポーネントの外ならば、インスタンスの変数名
+        // $emit ("エミットの名前(自分で命名していい)", データ)
+        // emitの送り口
+        this.$emit("my-click", this.totalNumber + 1);
       }
     }
   }

@@ -2,7 +2,7 @@
 <div>
   <LikeHeader></LikeHeader>
   <h2>{{ number }}</h2>
-  <LikeNumber v-bind:totalNumber="number"></LikeNumber>
+  <LikeNumber v-bind:totalNumber="number" v-on:my-click="number = $event"></LikeNumber>
   <LikeNumber :total-number="number"></LikeNumber>
 </div>
 </template>
