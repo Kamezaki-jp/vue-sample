@@ -9,7 +9,14 @@
 
 <script>
   export default { 
-    props: ['totalNumber'],
+    props: {
+      // バリデーション（型の指定、オブジェクトとしても指定できる）
+      totalNumber: {
+        type: Number,
+        // required 必須項目
+        required: true,
+      }
+    },
     computed: {
       halfNumber () {
         return this.totalNumber / 2;
